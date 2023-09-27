@@ -21,7 +21,7 @@ streamlit.dataframe(my_fruit_list)
 streamlit.header("Fruityvice Fruit Advice!")
 
 try:
-  
+  streamlit.stop()
   fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "kiwi")
   streamlit.text(fruityvice_response)
   
